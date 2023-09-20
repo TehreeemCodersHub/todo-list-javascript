@@ -1,15 +1,14 @@
 let submit_btn = document.querySelector('#submit');
 let delete_item = document.querySelector('#deleteItem');
-// let add_task = document.querySelector('.task');
 let msg = document.getElementById("msg");
 let ul_items = document.querySelector('#items li>input');
-//console.log(ul_items.value);
 const form = document.querySelector('#addForm');
 const input_item = document.querySelector('#item-input');
 let todos_array = [];
 let data = {};
 
 form.addEventListener('submit',(e)=>{
+  
   e.preventDefault();
   todos();
 });
@@ -34,7 +33,7 @@ function todos() {
       </ul>
       
       `;
-      input_item.value == "";
+      input_item.value = "";
       msg.innerHTML = '';
 
      }else {
