@@ -24,15 +24,34 @@
   
   <div class="p-14 felx flex-col space-y-4"> 
 
-    <h1 class="uppercase" > task list 2021 </h1>
+    <h1 class="uppercase font-bold" > task list 2021 </h1>
+    
+    <form id="addForm">
 
-    <div class="flex space-x-2" >
-      <input placeholder="What do you have planned" class="w-full rounded-lg" />
-      <button class="bg-white rounded-lg "> Addd Task </button>
-    </div> 
+      <div class="flex space-x-4 pb-10" >
+        
+        <div class="flex flex-col w-full">
+          <input placeholder="What do you have planned ..." id="item-input" class=" pl-3  w-full h-10 rounded-lg "  /> 
+         <span id="msg" class="text-red-700" ></span>
+        </div>
+       <button class=" rounded-lg px-3 bg-green-400" value="submit" type="submit" > Add </button>
+       <button class=" rounded-lg px-3 bg-red-400" id="clear" value="submit" type="submit" > Clear</button>
+       
+      </div>
 
-    <form>
+      <h1 class="uppercase" >todo list </h1>
+      
+     
+
+      <div class="task">
+
+      </div>
+
+
     </form>
+     
+
+   
     
 
   </div>
